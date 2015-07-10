@@ -34,8 +34,8 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/add-to-homescreen/style/addtohomescreen.css" />
+    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='bower_components/add-to-homescreen/style/addtohomescreen.css' />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -49,8 +49,8 @@
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -72,7 +72,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right text-outline-link">
                     <li> <a ng-href="#/">Home</a> </li>
-                    <li> <a ng-href="#/about">About</a> </li>
+                    <li> <a ng-href="#/about">About</a> </li>                    
+                    <li> <a ng-href="#/offers">Special Offers</a> </li>
+                    <li> <a ng-href="#/mobile">Mobile App</a> </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -87,7 +90,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading text-outline">
                         <h1>Barcelando</h1>
-                        <hr class="small"> <span class="subheading">Cultural information through Barcelona's underbelly updated daily.</span> </div>
+                        <span class="subheading">cultural information through Barcelona's underbelly<br>updated daily</span> </div>
                 </div>
             </div>
         </div>
@@ -96,7 +99,7 @@
     <div class="container">
         <div ng-view=""></div>
     </div>
-    <hr>
+    
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -126,6 +129,8 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/add-to-homescreen/src/addtohomescreen.min.js"></script>
+    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -133,6 +138,8 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/mobile.js"></script>
+        <script src="scripts/controllers/offers.js"></script>
         <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
