@@ -71,7 +71,7 @@ angular.module('barcelandoApp')
 	//moment('2015-07-10T20:00:00+0200').format('dddd MMMM Do YYYY, h:mm:ss a')
 	facebookService.callApi("/"+id+"/", {fields: 'cover,start_time, place,timezone'}).then(
      function(response){
-     		response.start_time =  m(response.start_time).format('dddd MMMM Do YYYY, h:mm:ss a');
+     		response.start_time =  m(response.start_time).format('dddd MMMM Do YYYY, h:mm a');
 			$scope.edetails = response;
 		}
 	);
